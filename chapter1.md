@@ -204,3 +204,33 @@ So classifying to the largest $$\hat{\delta}_k(x)$$ amounts to classifying to th
 
 **False negative rate**: The fraction of positive examples that are classified as negative
 
+
+
+
+
+![](/assets/屏幕快照 2017-11-15 下午8.09.44.png)
+
+
+
+always want false positive error low
+
+### Other forms of Discriminant Analysis
+
+
+$$
+\mathrm{Pr}(Y=k|X=x)=\frac{\pi_kf_k(x)}{\sum_{l=1}^{K}\pi_lf_l(x)}
+$$
+
+
+When $$f_k(x)$$ are Gaussian densities, with the same covariance matrix $$\Sigma$$ in each class, this leads to linear discriminant analysis. By altering the forms for $$f_k(x)$$, we get different classifiers.
+
+
+
+
+
+
+
+
+
+
+
