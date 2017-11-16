@@ -233,9 +233,17 @@ Assumes features are independent in each class.
 Useful when $$p$$ is large, and so multivariate methods like QDA and even LDA break down.
 
 * Gaussian naive Bayes assumes each $$\Sigma_k$$ is diagonal:
+
+
   $$
   \delta_k(x) \propto \text{log}\bigg[\pi_k\prod_{j=1}^p f_{kj}(x_j)  \bigg]= -\frac{1}{2}\sum_{j=1}^{p}\frac{(x_j-\mu_{kj})^2}{\sigma_{kj}^2}+\text{log}\pi_k
   $$
 
+* can use for mixed feature vectors \(qualitative and quantitative\). If $$X_j$$ is qualitative, replace $$f_{kj}(x_j)$$ with probability mass function \(histogram\) over discrete categories
 
+Despite strong assumptions, naive Bayes often produces good classification results.
+
+![](/assets/屏幕快照 2017-11-15 下午8.46.52.png)
+
+![](/assets/屏幕快照 2017-11-15 下午8.46.59.png)
 
